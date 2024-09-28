@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealth Wise Investments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="logo.png" type="image/png">
+  <script defer src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" class="logori" >
+    
+      <div class="logo">
+        
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="investment.html">Investment</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="#">Legal</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="#" class="login-btn">Login</a>
+        <a href="#" class="signup-btn">Sign Up</a>
+      </div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </nav>
+    <div class="hero-section">
+      <h1>Your Trusted Partner in Investments</h1>
+      <p>We help you grow and secure your wealth with strategic and reliable investment plans.</p>
+      <a href="#" class="cta-btn">Get Started</a>
+    </div>
+  </header>
+
+  
+  <section class="features">
+    <div class="feature">
+      <img src="secure.jpg" alt="Secure Investment">
+      <h2>Secure Investments</h2>
+      <p>Our plans are designed to provide maximum security for your investments.</p>
+    </div>
+    <div class="feature">
+      <img src="highreturn.jpg" alt="High Returns">
+      <h2>High Returns</h2>
+      <p>We ensure your wealth grows with competitive rates and expert strategies.</p>
+    </div>
+    <div class="feature">
+      <img src="expert.avif" alt="Expert Advisors">
+      <h2>Expert Advisors</h2>
+      <p>Work with professionals who understand market trends and risks.</p>
+    </div>
+  </section>
+
+  
+  <div id="crypto-chart">
+    <h2>Live Cryptocurrency Prices</h2>
+    <canvas id="cryptoPriceChart"></canvas>
+  </div>
+  
+  
+  <section class="investment-notes">
+    <h2>Investment Notes</h2>
+    <p>At Wealth Wise Investment, we prioritize transparency and accountability in all our investment operations. Our strategies focus on providing sustainable returns while ensuring the security of your capital.</p>
+    <ul>
+      <li>Our experts continuously monitor market conditions to adapt our strategies to current trends.</li>
+      <li>We provide monthly reports on your investment portfolio, ensuring full transparency.</li>
+      <li>We offer customized plans tailored to your financial goals.</li>
+    </ul>
+  </section>
+
+ 
+  <section class="plans">
+    <h2>Our Plans</h2>
+    <div class="plan">
+      <img src="basic-plan.jpg" alt="Basic Plan">
+      <h3>Basic Plan</h3>
+      <p>Investment: $1,000 - $10,000</p>
+      <p>Returns: 5% per annum</p>
+    </div>
+    <div class="plan">
+      <img src="premium-plan.jpg" alt="Premium Plan">
+      <h3>Premium Plan</h3>
+      <p>Investment: $10,000 - $100,000</p>
+      <p>Returns: 8% per annum</p>
+    </div>
+    <div class="plan">
+      <img src="elite-plan.avif" alt="Elite Plan">
+      <h3>Elite Plan</h3>
+      <p>Investment: $100,000+</p>
+      <p>Returns: 12% per annum</p>
+    </div>
+  </section>
+
+ 
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>How safe is my investment?</h4>
+      <p>We employ stringent risk management strategies to ensure your capital is as safe as possible, with a focus on long-term, sustainable growth.</p>
+    </div>
+    <div class="faq-item">
+      <h4>What are the withdrawal options?</h4>
+      <p>Withdrawals can be made quarterly without any penalties. Full withdrawal options are available after a minimum holding period of 12 months.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How can I get started?</h4>
+      <p>You can start by signing up and choosing a plan that aligns with your financial goals. Our support team is available to guide you through the process.</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <h2>Our Achievements</h2>
+    <div class="stats-container">
+      <div class="stat">
+        <h3>50,000+</h3>
+        <p>Happy Users</p>
+      </div>
+      <div class="stat">
+        <h3>$5 Million+</h3>
+        <p>Total Investments</p>
+      </div>
+      <div class="stat">
+        <h3>$20 Million+</h3>
+        <p>Withdrawals Processed</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="risk-disclaimer">
+    <h2>Risk Disclaimer</h2>
+    <p>Investing in financial markets involves risk, including the loss of capital. Past performance does not guarantee future results. Make sure you understand all the risks before investing with Wealth Wise Investments.</p>
+  </section>
+
+  <div id="popup-notification" class="popup hidden">
+    <p id="popup-message"></p>
+  </div>
+  
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>About Us</h4>
+        <span>We are a global investment firm committed to helping our clients grow their wealth with secure and sustainable investment strategies.</span>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Policy</h4>
+        <ul>
+          <li><a href="policy.html">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Disclaimers</a></li>
+          <li><a href="#">Risk Disclosure</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 WealthwiseInvestment Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
