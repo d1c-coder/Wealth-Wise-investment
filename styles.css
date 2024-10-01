@@ -59,7 +59,7 @@ header {
   background-color: white;
   border-bottom: 2px solid rgb(136, 118, 15);
   padding-top: 10px;
- height: 6rem;
+ height: 4rem;
  margin-top: 0px;
  text-align: center;
  
@@ -83,8 +83,8 @@ header {
 }
 
 .logori{
-  height: 6rem;
-  width: 5rem;
+  height: 7rem;
+  width: 12rem;
 }
 .navbar ul {
   list-style: none;
@@ -94,7 +94,7 @@ header {
 }
 
 .navbar ul li {
-  margin-left: 20px;
+  margin-left: 25px;
   align-items: center;
 }
 
@@ -211,7 +211,18 @@ header {
   margin-bottom: 20px;
 }
 
-
+.investment-notes h2 {
+ text-align: center;
+ color: #daa520;
+}
+.investment-notes li {
+  text-align: center;
+  
+ }
+ .investment-notes p {
+  text-align: center;
+  
+ }
 /* Responsive Design */
 
 /* Large screens (desktops and larger tablets) */
